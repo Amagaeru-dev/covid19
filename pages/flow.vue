@@ -2,9 +2,7 @@
   <div class="Flow">
     <div class="Flow-Heading">
       <CovidIcon />
-      <h2 class="Flow-Heading-Title">
-        新型コロナウイルス感染症が心配なときに
-      </h2>
+      <h2 class="Flow-Heading-Title">新型コロナウイルス感染症が心配なときに</h2>
       <PrinterButton :wrapper-class="'Flow-PullRight'" />
     </div>
     <div class="Flow-Card">
@@ -25,6 +23,66 @@
           mdi-open-in-new
         </v-icon>
       </a>
+
+      <h2>発熱等の症状がある場合</h2>
+      <dev class="Flow-Card">
+        <div>
+          <ul style="list-style: none;">
+            <li>
+              かかりつけ医がいる場合　→　かかりつけ医等最寄りの医療機関に電話をして相談
+            </li>
+            <li>
+              かかりつけ医がいない場合　→　山梨県新型コロナウイルス感染症受診・相談センターに相談
+            </li>
+            <span>TEL：055-223-8896（24時間対応</span>
+            <span
+              >※甲府市の方は甲府市受診・相談センターに相談　TEL：055-237-8952（24時間対応</span
+            >
+          </ul>
+        </div>
+      </dev>
+      <dev class="Flow-Card">
+        <ul style="list-style: none;">
+          <li>FAXでの相談はお住まいの地域の保健所へ</li>
+          <li class="top_space">中北保健所　　　　FAX　0551－23－3075（平日　８時30分～17時15分）</li>
+          <li>峡東保健所　　　　FAX　0553－20－2754（平日　８時30分～17時15分）</li>
+          <li>峡南保健所　　　　FAX　0556－22－8159（平日　８時30分～17時15分）</li>
+          <li>富士・東部保健所　FAX　0555－24－9037（平日　８時30分～17時15分）</li>
+          <li>甲府市保健所　　　FAX　055－242－6178（平日・土日祝日　８時30分～17時15分）</li>
+        </ul>
+      </dev>
+
+      <div class="AdvisoryContainer_3CI24">
+        <div>
+          <h2 class="Flow-Heading">不安に思う方</h2>
+          <p>
+            <ul style="list-style: none; text-align: left;">
+              <li>山梨県新型コロナウイルス感染症受診・相談センターに相談　</li>
+              <li>TEL：055-223-8896（24時間対応）</li>
+              <li class="top_space">FAXでの相談は山梨県健康増進課　</li>
+              <li>FAX:055－223－1499（平日　8時30分～17時15分）</li>
+              <li class="top_space">甲府市保健所（甲府市にお住まいの方）</li>
+              <li>FAX:055－242－6178（平日・土日祝日　８時30分～17時15分）</li>
+            </ul>
+            </p>
+        </div>
+        <div  class="AdvisoryContents_21MQf">
+          <h2 class="Flow-Heading">電話やオンラインによる診療を行う医療機関</h2>
+          <p>
+            新型コロナウイルス感染症の拡大に際し、電話や情報通信機器を用いた診療が特例的に認められています。
+            電話や情報通信機器による診療を行う医療機関の一覧はこちらをご覧ください。
+          </p>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 10px">
+        <span class="FlowLine__mDD1">詳細は以下のチラシをご覧ください</span>
+        <br>
+        <a
+          class="Flow-Card-Button"
+          href="https://www.pref.yamanashi.jp/koucho/coronavirus/documents/new.pdf"
+        >
+          新しい相談体制（11月1日より）（PDF：821KB）</a>
+      </div>
     </div>
   </div>
 </template>
@@ -39,9 +97,9 @@ export default {
   components: { CovidIcon, PrinterButton, FlowPc, FlowSp },
   head() {
     return {
-      title: '新型コロナウイルス感染症が心配なときに'
+      title: '新型コロナウイルス感染症が心配なときに',
     }
-  }
+  },
 }
 </script>
 
@@ -181,5 +239,9 @@ export default {
   .only-pc {
     display: none;
   }
+}
+
+.top_space {
+  margin-top: 10px;
 }
 </style>
